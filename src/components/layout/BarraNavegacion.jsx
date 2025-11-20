@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaUser, FaSignOutAlt } from 'react-icons/fa';
-import { useAuth } from '../../context/ContextoAutenticacion';
+import { useAuth } from '../../context/contextoAutenticacion';
 
 const BarraNavegacion = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);

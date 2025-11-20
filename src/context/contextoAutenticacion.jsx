@@ -1,4 +1,4 @@
-// frontend/src/context/ContextoAutenticacion.jsx
+// frontend/src/context/contextoAutenticacion.jsx
 
 import { createContext, useContext, useState, useEffect } from 'react';
 import api from '../services/api';
@@ -7,14 +7,14 @@ import api from '../services/api';
  * CONTEXTO DE AUTENTICACIÓN
  * Maneja el estado global del usuario logueado
  */
-const ContextoAutenticacion = createContext();
+const contextoAutenticacion = createContext();
 
 /**
  * HOOK PERSONALIZADO
  * Para usar el contexto fácilmente en cualquier componente
  */
 export const useAuth = () => {
-  const contexto = useContext(ContextoAutenticacion);
+  const contexto = useContext(contextoAutenticacion);
   if (!contexto) {
     throw new Error('useAuth debe usarse dentro de ProveedorAutenticacion');
   }
@@ -116,10 +116,10 @@ export const ProveedorAutenticacion = ({ children }) => {
   };
 
   return (
-    <ContextoAutenticacion.Provider value={valor}>
+    <contextoAutenticacion.Provider value={valor}>
       {children}
-    </ContextoAutenticacion.Provider>
+    </contextoAutenticacion.Provider>
   );
 };
 
-export default ContextoAutenticacion;
+export default contextoAutenticacion;

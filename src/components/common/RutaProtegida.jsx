@@ -1,7 +1,7 @@
 // frontend/src/components/common/RutaProtegida.jsx
 
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../../context/ContextoAutenticacion';
+import { useAuth } from '../../context/contextoAutenticacion';
 
 /**
  * COMPONENTE PARA PROTEGER RUTAS
