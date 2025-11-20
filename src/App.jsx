@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ProveedorAutenticacion } from './context/contextoAutenticacion';
+import { ProveedorAutenticacion } from './context/ContextoAutenticacion';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
